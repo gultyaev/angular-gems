@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="668c2c1d-e8e8-442d-8241-846d6477c13e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,10 +30,10 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+            <state relative-caret-position="204">
+              <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
               <folding>
-                <marker date="1489082018029" expanded="true" signature="9467:12411" ph="..." />
+                <marker date="1489082152267" expanded="true" signature="9477:12421" ph="..." />
               </folding>
             </state>
           </provider>
@@ -213,12 +213,12 @@
       <workItem from="1489008565736" duration="632000" />
       <workItem from="1489010647421" duration="42000" />
       <workItem from="1489075207219" duration="158000" />
-      <workItem from="1489081986371" duration="29000" />
+      <workItem from="1489081986371" duration="163000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2369000" />
+    <option name="totallyTimeSpent" value="2503000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -269,7 +269,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1489082018029" expanded="true" signature="9467:12411" ph="..." />
+            <marker date="1489082152267" expanded="true" signature="9477:12421" ph="..." />
           </folding>
         </state>
       </provider>
@@ -291,7 +291,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1489082018029" expanded="true" signature="9467:12411" ph="..." />
+            <marker date="1489082152267" expanded="true" signature="9477:12421" ph="..." />
           </folding>
         </state>
       </provider>
@@ -313,7 +313,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1489082018029" expanded="true" signature="9467:12411" ph="..." />
+            <marker date="1489082152267" expanded="true" signature="9477:12421" ph="..." />
           </folding>
         </state>
       </provider>
@@ -335,7 +335,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1489082018029" expanded="true" signature="9467:12411" ph="..." />
+            <marker date="1489082152267" expanded="true" signature="9477:12421" ph="..." />
           </folding>
         </state>
       </provider>
@@ -357,7 +357,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1489082018029" expanded="true" signature="9467:12411" ph="..." />
+            <marker date="1489082152267" expanded="true" signature="9477:12421" ph="..." />
           </folding>
         </state>
       </provider>
@@ -398,7 +398,7 @@
         <state relative-caret-position="1037">
           <caret line="75" column="36" lean-forward="false" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
           <folding>
-            <marker date="1489082018029" expanded="true" signature="9467:12411" ph="..." />
+            <marker date="1489082152267" expanded="true" signature="9477:12421" ph="..." />
           </folding>
         </state>
       </provider>
@@ -408,7 +408,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1489082018029" expanded="true" signature="9467:12411" ph="..." />
+            <marker date="1489082152267" expanded="true" signature="9477:12421" ph="..." />
           </folding>
         </state>
       </provider>
@@ -430,7 +430,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1489082018029" expanded="true" signature="9467:12411" ph="..." />
+            <marker date="1489082152267" expanded="true" signature="9477:12421" ph="..." />
           </folding>
         </state>
       </provider>
@@ -452,7 +452,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1489082018029" expanded="true" signature="9467:12411" ph="..." />
+            <marker date="1489082152267" expanded="true" signature="9477:12421" ph="..." />
           </folding>
         </state>
       </provider>
@@ -471,10 +471,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+        <state relative-caret-position="204">
+          <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
           <folding>
-            <marker date="1489082018029" expanded="true" signature="9467:12411" ph="..." />
+            <marker date="1489082152267" expanded="true" signature="9477:12421" ph="..." />
           </folding>
         </state>
       </provider>
