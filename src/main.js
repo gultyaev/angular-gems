@@ -61,16 +61,6 @@ app.controller('StoreController', function () {
         { id: 5, name:'yellow', shade:'light' }
     ];
 
-    //this.color1 = 2;
-    //this.color2 = 2;
-    //this.color3 = 2;
-    //this.color4 = 2;
-
-    //this.color1 = this.colors[2];
-    //this.color2 = this.colors[2];
-    //this.color3 = this.colors[2];
-    //this.color4 = this.colors[2];
-
 });
 
 
@@ -103,13 +93,14 @@ app.controller('StoreController', function () {
                    stars:  random.stars(),
                    body:   random.sentence(),
                    author: random.email()
-               }]
+               }],
+               specifs: []
            };
        });
 });
 
 app.controller('PanelController', function () {
-   this.tab = 3;
+   this.tab = 2;
 
    this.selectTab = function (tab) {
        this.tab = tab;
@@ -142,24 +133,16 @@ app.controller('ReviewController', function () {
    };
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+app.controller('SpecificationController', function () {
+    this.spec = {
+        colors: []
+    };
+    this.addSpecification = function (product) {
+        this.spec.colors = this.spec.colors.join(', ');
+        product.specifs.push(this.spec);
+        this.spec = {};
+    }
+    this.addColor = function (color) {
+        this.spec.colors.push(color);
+    }
+})

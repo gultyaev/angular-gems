@@ -52,7 +52,10 @@ button {
     margin: 0 auto 10px;
 }
 
-
+.box {
+    vertical-align: top;
+    outline: none;
+}
 
 
 /*.ng-dirty.ng-invalid {

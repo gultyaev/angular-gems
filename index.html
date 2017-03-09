@@ -13,216 +13,6 @@
 <body>
 
 <div class="wrapper" ng-class="{'app-loaded': true}">
-
-
-
-    <!--<div ng-controller="StoreController as store">-->
-
-        <!--<input type="text" placeholder="Enter your name" ng-model="name" />-->
-        <!--Your name is: {{ name }}-->
-
-        <!--<br/>-->
-
-        <!--<input type="checkbox" ng-model="yes" />-->
-        <!--Yes: {{ yes }}-->
-
-        <!--<br/>-->
-
-        <!--<input type="radio" name="pet" value="cat" ng-model="pet" />-->
-        <!--<input type="radio" name="pet" value="dog" ng-model="pet" />-->
-        <!--Pet: {{ pet }}-->
-
-        <!--<br/>-->
-
-        <!--<textarea ng-model="about"></textarea>-->
-        <!--About: {{ about }}-->
-
-    <!--</div>-->
-
-
-
-
-    <!--<div ng-controller="StoreController as store">
-
-        &lt;!&ndash;<select ng-model="number1">
-            <option value="">No</option>
-            <option ng-repeat="number in store.numbers" value="{{ number }}">{{ number }}</option>
-        </select>
-        number1: {{ number1 }}
-        <hr/>
-
-        <select ng-model="number2" ng-options="number for number in store.numbers">
-            <option value="">No</option>
-        </select>
-        number2: {{ number2 }}&ndash;&gt;
-
-
-
-
-
-        &lt;!&ndash; hidden default value &ndash;&gt;
-
-
-
-
-
-
-
-        &lt;!&ndash;<select ng-model="store.color1">
-            <option value="">No</option>
-            <option ng-repeat="color in store.colors" value="{{ color.id }}">{{ color.name }}</option>
-        </select>
-        color1: {{ store.color1 }}
-        <hr/>
-
-        <select ng-options="c.name for c in store.colors" ng-model="store.color2">
-            <option value="">No</option>
-        </select>
-        color2: {{ store.color2 }}
-        <hr/>
-
-        <select ng-options="c.name for c in store.colors track by c.id" ng-model="store.color3">
-            <option value="">No</option>
-        </select>
-        color3: {{ store.color3 }}
-        <hr/>
-
-        <select ng-options="c.id as c.name for c in store.colors" ng-model="store.color4">
-            <option value="">No</option>
-        </select>
-        color4: {{ store.color4 }}&ndash;&gt;
-
-
-
-
-
-
-
-        &lt;!&ndash;<select ng-options="c.id as c.name group by c.shade for c in store.colors" ng-model="color">
-            <option value="">No</option>
-        </select>
-
-        <hr/>
-
-        <select ng-options="c.id as c.name disable when c.disabled for c in store.colors" ng-model="color">
-            <option value="">No</option>
-        </select>&ndash;&gt;
-
-    </div>-->
-
-
-
-
-
-
-
-
-    <!--<div ng-controller="StoreController as store">
-
-        <div class="item" ng-repeat="product in store.products">
-            <h3 class="pull-right">{{ product.price | currency }}</h3>
-            <h2>{{ product.name }}</h2>
-
-            <div class='gallery' ng-controller="GalleryController as gallery"  ng-show="product.images.length">
-                <div class="img-wrap">
-                    <img ng-src="{{ product.images[gallery.current] }}" />
-                </div>
-                <ul class="img-thumbnails clearfix">
-                    <li class="small-image thumbnail" ng-repeat="image in product.images">
-                        <img ng-src="{{ image }}" ng-click="gallery.setCurrent($index)" />
-                    </li>
-                </ul>
-            </div>
-
-            <div ng-controller="PanelController as panel">
-                <ul class="nav nav-pills">
-                    <li ng-class="{ active: panel.isSelected(1) }">
-                        <a href ng-click="panel.selectTab(1)">Description</a>
-                    </li>
-                    <li ng-class="{ active: panel.isSelected(2) }">
-                        <a href ng-click="panel.selectTab(2)">Specifications</a>
-                    </li>
-                    <li ng-class="{ active: panel.isSelected(3) }">
-                        <a href ng-click="panel.selectTab(3)">Reviews</a>
-                    </li>
-                </ul>
-
-                <div class="panel" ng-show="panel.isSelected(1)">
-                    <div class="panel-body">
-                        <h4>Description</h4>
-                        <blockquote>{{ product.description }}</blockquote>
-                    </div>
-                </div>
-                <div class="panel" ng-show="panel.isSelected(2)">
-                    <div class="panel-body">
-                        <h4>Specifications</h4>
-                        <blockquote>No data yet</blockquote>
-                    </div>
-                </div>
-                <div class="panel" ng-show="panel.isSelected(3)">
-                    <div class="panel-body">
-                        <h4>Reviews</h4>
-
-                        &lt;!&ndash;<blockquote>No data yet</blockquote>&ndash;&gt;
-                        <blockquote ng-repeat="review in product.reviews">
-                            <b>{{ review.stars }} Stars:</b>
-                            {{ review.body }}
-                            <div><i>– {{ review.author }}</i></div>
-                        </blockquote>
-
-                        <form>
-                            <blockquote>
-                                <b>{{ review.stars }} Stars:</b>
-                                {{ review.body }}
-                                <div><i>– {{ review.author }}</i></div>
-                            </blockquote>
-
-                            <fieldset class="form-group">
-                                <select class="form-control" ng-model="review.stars" ng-options="stars for stars in [5,4,3,2,1]">
-                                    <option value="">Rate the product</option>
-                                </select>
-                            </fieldset>
-                            &lt;!&ndash; (stars + ' stars') &ndash;&gt;
-                            &lt;!&ndash; (stars + ' stars' | uppercase) &ndash;&gt;
-
-                            <fieldset class="form-group">
-                                <textarea class="form-control" ng-model="review.body" placeholder="Write a short review of the product..."></textarea>
-                            </fieldset>
-
-                            <fieldset class="form-group">
-                                <input class="form-control" ng-model="review.author" type="email" placeholder="email@example.org" />
-                            </fieldset>
-
-                            <fieldset class="form-group">
-                                <input class="btn btn-primary" type="submit" value="Submit" />
-                            </fieldset>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-            <div class="text-center">
-                <button class="btn btn-success" ng-show="product.canPurchase">Get one</button>
-            </div>
-        </div>
-
-    </div>-->
-
-
-
-
-
-
-    <!--
-    1. controller
-    2. submit
-    3. novalidate, required
-    4. add form name
-    5. submit invalid and add &&
-    6. add css for valid/invalid
-    7. add date
-    -->
-
     <div ng-controller="StoreController as store">
 
         <div class="item" ng-repeat="product in store.products">
@@ -262,9 +52,86 @@
                 <div class="panel" ng-show="panel.isSelected(2)">
                     <div class="panel-body">
                         <h4>Specifications</h4>
-                        <blockquote>No data yet</blockquote>
+                        <blockquote ng-repeat="spec in product.specifs">
+                            <p>Weight: {{ spec.weight }}</p>
+                            <p>Country: {{ spec.country }}</p>
+                            <p>Num of faces: {{ spec.faceNum }}</p>
+                            <p>Tech. descr.: {{ spec.descr }}</p>
+                            <p>Is beauty: {{ spec.isBeauty || 'false' }}</p>
+                            <p>Gender: {{ spec.gender }}</p>
+                            <p>Colors: {{ spec.colors }}</p>
+                        </blockquote>
+
+                        <form name="specificationForm" ng-controller="SpecificationController as specifCtrl"
+                              ng-submit="specificationForm.$valid && specifCtrl.addSpecification(product)" novalidate>
+
+                            <blockquote>
+                                <b>Preview</b>
+                                <hr/>
+                                <p>Weight: {{ specifCtrl.spec.weight }} g</p>
+                                <p>Country: {{ specifCtrl.spec.country }}</p>
+                                <p>Num of faces: {{ specifCtrl.spec.faceNum }}</p>
+                                <p>Tech. descr.: {{ specifCtrl.spec.descr }}</p>
+                                <p>Is beauty: {{ specifCtrl.spec.isBeauty || 'false' }}</p>
+                                <p>Gender: {{ specifCtrl.spec.gender }}</p>
+                                <p>Colors: {{ specifCtrl.spec.colors }}</p>
+                            </blockquote>
+
+                            <fieldset class="form-group">
+                                <input type="number" class="form-control" ng-model="specifCtrl.spec.weight"
+                                       placeholder="Please enter the weight here..." required/>
+                            </fieldset>
+
+                            <fieldset class="form-group">
+                                <input type="text" class="form-control" ng-model="specifCtrl.spec.country"
+                                       placeholder="Please enter your country here..." required/>
+                            </fieldset>
+
+                            <fieldset class="form-group">
+                                <select class="form-control" ng-model="specifCtrl.spec.faceNum"
+                                        ng-options="number for number in ([23,62,78,42,55] | orderBy: number : true)"
+                                        required>
+                                    <option value="" hidden>Choose face nums</option>
+                                </select>
+                            </fieldset>
+
+                            <fieldset class="form-group">
+                                <textarea class="form-control" ng-model="specifCtrl.spec.descr"
+                                          placeholder="Enter hear a short description about this gem" required>
+
+                                </textarea>
+                            </fieldset>
+
+                            <fieldset class="form-group">
+                                <label>Is the gem beauty
+                                    <input type="checkbox" class="box" ng-model="specifCtrl.spec.isBeauty"/></label>
+                            </fieldset>
+
+                            <fieldset class="form-group">
+                                <label><input class="box" type="radio" name="gender" value="male"
+                                              ng-model="specifCtrl.spec.gender" required> male</label>
+                                <label><input class="box" type="radio" name="gender" value="female"
+                                              ng-model="specifCtrl.spec.gender"> female</label>
+                            </fieldset>
+
+                            <fieldset class="form-group">
+                                <select class="form-control" ng-model="specifCtrl.spec.color"
+                                        ng-options="color for color in ['yellow','green','red','blue','black','transparent']"
+                                        required>
+                                    <option value="" hidden>Choose colors</option>
+                                </select>
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <input type="button" value="Add color" class="btn btn-default"
+                                       ng-click="specifCtrl.addColor(specifCtrl.spec.color)"/>
+                            </fieldset>
+
+                            <fieldset class="form-group">
+                                <input class="btn btn-primary" type="submit" value="Submit" />
+                            </fieldset>
+                        </form>
                     </div>
-                </div>
+                </div><!-- isSelected(2) -->
                 <div class="panel" ng-show="panel.isSelected(3)">
                     <div class="panel-body">
                         <h4>Reviews</h4>
